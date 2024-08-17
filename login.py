@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 
 # Path to the static Chrome WebDriver
-webdriver_path = r"C:\Temp\chromedriver.exe"
+webdriver_path = r"C:\Users\mike\Temp\chromedriver.exe"
 
 # Set up the Chrome WebDriver using the static location
 driver = webdriver.Chrome(service=Service(webdriver_path))
@@ -56,7 +56,7 @@ print("The cleaned URL is:", clean_url)
 
 
 # Path to the PowerShell script
-ps_script_path = r'C:\Temp\p81.ps1'
+ps_script_path = r'C:\Users\mike\Temp\p81.ps1'
 
 # Prepare the full command to be executed
 full_command = f'powershell -ExecutionPolicy Bypass -File "{ps_script_path}" "{clean_url}"'
